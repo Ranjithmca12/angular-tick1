@@ -1,0 +1,5 @@
+<h3>Shipping Prices</h3>
+<div class="shipping-item" *ngFor="let spc of spcharges | async">
+  <span>{{spc.type}}</span>
+  <span>{{spc.price | currency}}</span>
+</div>
